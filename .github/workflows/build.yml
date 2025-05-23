@@ -24,11 +24,11 @@ jobs:
       fail-fast: false
       matrix:
         arch:
-          - mipsel_mips32
-          - x86_64
+          - aarch64_cortex-a53
+          - aarch64_cortex-a72
+          - aarch64_generic
         sdk:
           - openwrt-22.03
-          - SNAPSHOT
 
     steps:
       - uses: actions/checkout@v4
